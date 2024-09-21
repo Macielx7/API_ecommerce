@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "node bin/server.ts",
-    "postinstall": "cp node_modules/@adonisjs/ace/build/command_metadata_schema.json ./build/command_metadata_schema.json",
+    "postinstall": "cp node_modules/@adonisjs/ace/build/command_metadata_schema.json",
     "build": "node ace build"
     
   },
