@@ -1,15 +1,20 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "bin/server.ts",
-            "use": "@vercel/node"
-        }
+      {
+        "src": "server.ts",
+        "use": "@vercel/node"
+      }
     ],
     "routes": [
-        {
-            "src": "(.*)",
-            "dest": "bin/server.ts"
-        }
-    ]
-}
+      {
+        "src": "/(.*)",
+        "dest": "server.ts"
+      }
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "installCommand": "npm ci"
+  }
+  
